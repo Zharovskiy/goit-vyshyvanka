@@ -1,0 +1,22 @@
+body {
+    font-family: 'Manrope', sans-serif;
+    color: rgba(252, 249, 249, 0.40);
+    font-size: 14px;
+    font-style: normal;
+    background-color: #111111;
+}
+
+ul, ol, li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
