@@ -117,8 +117,81 @@ h1, h2, h3, h4, h5, h6, p {
     transform: rotate(-30deg);
 }
 
+/* our collection */
+.section-our-collection {
+    padding-top: 18px;
+    padding-bottom: 40px;
+}
 
-/* Tablet */
+.section-our-collection .container {
+    background-image: url(../images/our_collection/elements_mob_1x.png);
+    background-repeat: no-repeat;
+    background-size: 72px 177px;
+    background-position: left 0px top 250px;
+}
+
+@media (min-resolution: 192dpi) {
+    .section-our-collection .container {
+        background-image: url(../images/our_collection/elements_mob_2x.png);
+    }   
+        
+}
+
+.our-collection-title {
+    color:#FCF9F9;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.37;
+    letter-spacing: -0.03em;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.our-collection-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.our-collection-item {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.our-collection-title-price {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.our-collection-item-title {
+    color: #FCF9F9;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.collection-tab {
+    display: none;
+}
+
+.our-collection-price {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0.05em;
+}
+
+
+
+
+
+
+
+/* =============================== Tablet =============================== */
 @media screen and (min-width: 768px) {
 
     /* Hero title */
@@ -170,7 +243,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .section-hero .container {
-    background-image: url(../images/hero_ukraine_tabl@1x.png);
+    background-image: url(../images/hero/hero_ukraine_tabl@1x.png);
     background-repeat: no-repeat;
     background-position: bottom -97px right 32px;
     background-size: 139px 197px;
@@ -178,15 +251,84 @@ h1, h2, h3, h4, h5, h6, p {
 
 @media (min-resolution: 192dpi) {
     .section-hero .container {
-        background-image: url(../images/hero_ukraine_tabl@2x.png);
+        background-image: url(../images/hero/hero_ukraine_tabl@2x.png);
     }    
         
 }
 
+/* About use */
+.section-about-use .container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 75px;
+    padding-bottom: 80px;
+    background-image: url(../images/elements@1x.png);
+    background-repeat: no-repeat;
+    background-position: bottom 0px right 0px;
+    background-size: 385px 484px;
+}
+
+@media (min-resolution: 192dpi) {
+    .section-about-use .container {
+        background-image: url(../images/elements@2x.png);
+    }    
+        
+}
+
+/* our collection */
+.section-our-collection {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.section-our-collection .container {
+    background-image: url(../images/our_collection/elements_tabl_1x.png);
+    background-size: 114px 300px;
+    background-position: left 0px top 220px;
+}
+
+@media (min-resolution: 192dpi) {
+    .section-our-collection .container {
+        background-image: url(../images/our_collection/elements_tabl_2x.png);
+    }   
+        
+}
+
+.our-collection-title {
+    font-size: 44px;
+    line-height: 1.45;
+}
+
+.our-collection-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.our-collection-item {
+    width: calc((100% - 20px) / 2);
+}
+
+.our-collection-item-title {
+    font-size: 18px;
+}
+
+.collection-tab {
+    display: inline-block;
+}
+
+.collection-mob {
+    display: none;
+}
+
+.our-collection-price {
+    font-size: 18px;
+}
+
 }
 
 
-/* Desk */
+/* ================== Desk ====================== */
 @media screen and (min-width: 1280px) {
     /* Hero title */
 .section-hero {
@@ -217,15 +359,42 @@ h1, h2, h3, h4, h5, h6, p {
 
 .section-hero .container {
     display: flex;
-    background-image: url(../images/hero_ukraine_desk@1x.png);
+    background-image: url(../images/hero/hero_ukraine_desk@1x.png);
     background-position: bottom -99px right 100px;
 }
 
 @media (min-resolution: 192dpi) {
     .section-hero .container {
-        background-image: url(../images/hero_ukraine_desk@2x.png);
+        background-image: url(../images/hero/hero_ukraine_desk@2x.png);
     }    
         
+}
+
+/* our collection */
+.section-our-collection {
+    padding-top: 70px;
+    padding-bottom: 75px;
+}
+
+.section-our-collection .container {
+    background-image: url(../images/our_collection/elements_desk_1x.png);
+    background-size: 169px 300px;
+    background-position: left 0px top 215px;
+}
+
+@media (min-resolution: 192dpi) {
+    .section-our-collection .container {
+        background-image: url(../images/our_collection/elements_desk_2x.png);
+    }   
+        
+}
+
+.our-collection-list {
+    gap: 40px 20px;
+}
+
+.our-collection-item {
+    width: calc((100% - 40px) / 3);
 }
 
 }
