@@ -185,6 +185,53 @@ h1, h2, h3, h4, h5, h6, p {
     letter-spacing: 0.05em;
 }
 
+/* FOOTER */
+.footer {
+    border-top: 1px solid rgba(252, 249, 249, 0.10);
+    max-width: 375px;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 292px;
+    background-image: url(../images/footer/footer_mob@1x.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 375px 212px;
+}
+
+@media (min-resolution: 192dpi) {
+    .footer {
+        background-image: url(../images/footer/footer_mob@2x.png);
+    }   
+        
+}
+
+.footer-menu {
+    display: block;
+    column-count: 2;
+    margin-bottom: 40px;
+}
+
+.footer-menu-link {
+    color: #FCF9F9;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.29;
+    text-transform: uppercase;
+}
+
+.footer-title {
+    color: #FCF9F9;
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 1.23;
+    letter-spacing: -0.03em;
+}
+
+.footer-title-color {
+    color: #ECD979;
+}
+
+
 
 
 
